@@ -9,8 +9,8 @@ enum Role {
 }
 // Role.AUTHOR (similar to Java)
 
-type Combinable = string | number | {title: string}
-let combine: Combinable // combine var could be string or number or json object
+type Combined = string | number | {title: string}
+let combine: Combined // combine var could be string or number or json object
 
 // in TS, Function is a type (like string, number, ...)
 // define type of function, good for callback (same as Kotlin)
