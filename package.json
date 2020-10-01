@@ -4,13 +4,23 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha -r ts-node/register src/tests/*.ts",
     "start": "lite-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.2.0",
     "lite-server": "^2.5.4",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "mocha": "^8.1.3"
+  },
+  "dependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.11.2",
+    "postman-sandbox": "^3.5.9",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
   }
 }
